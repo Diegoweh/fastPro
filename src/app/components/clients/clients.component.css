@@ -1,0 +1,23 @@
+.clients-heading {
+    color: #1a4db3;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+}
+
+
+.divider {
+    height: 1px;
+    background-color: #dee2e6;
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .client-logos {
+        justify-content: center;
+    }
+    
+    .logo-placeholder {
+        margin: 1rem 2rem;
+    }
+}
