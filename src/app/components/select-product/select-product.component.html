@@ -1,13 +1,9 @@
-<div id="selectProduct" class="container">
+<div id="selectProduct" class="container py-5">
     <div class="d-flex justify-content-between align-items-center">
         <!-- Texts on the left -->
         <div>
-            <h2 style="color: #2d3eae;">
-                Select a product
-            </h2>
-            <h2 style="color: #eb7700;">
-                to learn more
-            </h2>
+            <h2 style="color: #2d3eae;">Select a product</h2>
+            <h2 style="color: #eb7700;">to learn more</h2>
         </div>
 
         <!-- Image on the right -->
@@ -15,75 +11,177 @@
             <img src="product1.svg" alt="Product" class="img-fluid" style="max-width: 150px;">
         </div>
     </div>
+
     <div class="container py-5">
-        <div class="row g-5">
-            <!-- Shop all -->
-            <!-- <div class="col-6 col-md-4">
-                <a href="#" class="product-card">
-                    <div class="product-image">
-                        <img src="product2.webp" alt="" class="img-fluid">
-                    </div>
-                    <h2 class="product-title">Shop all</h2>
-                </a>
-            </div> -->
-            
-            <!-- Barrel Bag -->
+        <div class="row g-5">            
+            <!-- Producto 1 -->
             <div class="col-6 col-md-4">
-                <a href="#" class="product-card">
+                <div class="product-card text-center">
                     <div class="product-image">
                         <img src="product3.webp" alt="" class="img-fluid">
                     </div>
                     <h2 class="product-title">Barrel Bag</h2>
-                </a>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal1">
+                        More
+                    </button>
+                </div>
             </div>
-            
-            <!-- Builder's Bag -->
+
+            <!-- Producto 2 -->
             <div class="col-6 col-md-4">
-                <a href="#" class="product-card">
+                <div class="product-card text-center">
                     <div class="product-image">
                         <img src="product4.webp" alt="" class="img-fluid">
                     </div>
                     <h2 class="product-title">Builder's Bag</h2>
-                </a>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal2">
+                        More
+                    </button>
+                </div>
             </div>
-            
-            <!-- DeWatering Bag -->
+
+            <!-- Producto 3 -->
             <div class="col-6 col-md-4">
-                <a href="#" class="product-card">
+                <div class="product-card text-center">
                     <div class="product-image">
                         <img src="product5.webp" alt="" class="img-fluid">
                     </div>
                     <h2 class="product-title">DeWatering Bag</h2>
-                </a>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal3">
+                        More
+                    </button>
+                </div>
             </div>
-            
-            <!-- SUPER SACK® Standard -->
+
+            <!-- Producto 4 -->
             <div class="col-6 col-md-4">
-                <a href="#" class="product-card">
+                <div class="product-card text-center">
                     <div class="product-image">
                         <img src="product6.webp" alt="" class="img-fluid">
                     </div>
                     <h2 class="product-title">SUPER SACK® Standard</h2>
-                </a>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal4">
+                        More
+                    </button>
+                </div>
             </div>
-            
-            <!-- Accessories -->
+
+            <!-- Producto 5 -->
             <div class="col-6 col-md-4">
-                <a href="#" class="product-card">
+                <div class="product-card text-center">
                     <div class="product-image">
                         <img src="product7.webp" alt="" class="img-fluid">
                     </div>
                     <h2 class="product-title">Waste Away</h2>
-                </a>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal5">
+                        More
+                    </button>
+                </div>
             </div>
 
+            <!-- Producto 6 -->
             <div class="col-6 col-md-4">
-                <a href="#" class="product-card">
+                <div class="product-card text-center">
                     <div class="product-image">
                         <img src="product8.webp" alt="" class="img-fluid">
                     </div>
                     <h2 class="product-title">Accessories</h2>
-                </a>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal6">
+                        More
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- MODALES -->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Barrel Bag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="product3.webp" class="img-fluid mb-3" alt="Barrel Bag">
+                <p>Descripción del Barrel Bag...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Builder's Bag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="product4.webp" class="img-fluid mb-3" alt="Builder's Bag">
+                <p>Descripción del Builder's Bag...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">DeWatering Bag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="product5.webp" class="img-fluid mb-3" alt="DeWatering Bag">
+                <p>Descripción del DeWatering Bag...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">DeWatering Bag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="product6.webp" class="img-fluid mb-3" alt="DeWatering Bag">
+                <p>Descripción del DeWatering Bag...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">DeWatering Bag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="product7.webp" class="img-fluid mb-3" alt="DeWatering Bag">
+                <p>Descripción del DeWatering Bag...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">DeWatering Bag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="product8.webp" class="img-fluid mb-3" alt="DeWatering Bag">
+                <p>Descripción del DeWatering Bag...</p>
             </div>
         </div>
     </div>

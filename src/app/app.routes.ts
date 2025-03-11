@@ -11,10 +11,10 @@ export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'why', component: WhyComponent },
-  { path: 'select-product', component: SelectProductComponent },
+  { path: 'bags', component: SelectProductComponent  },
+  { path: 'textiles', component: IndustriesComponent },
   { path: 'industries', component: IndustriesComponent },
   { path: 'services', component: ServicezComponent },
-  { path: 'clients', component: ClientsComponent },
+  { path: 'contact', component: ClientsComponent },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
