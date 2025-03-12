@@ -8,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class ClientsComponent {
 
+  successMessage: string | null = null;
+
+  onSubmit(event: Event) {
+    event.preventDefault(); // Evita el comportamiento por defecto del formulario
+    this.successMessage = 'Thank you for subscribing!';
+    
+    // Oculta el mensaje después de 3 segundos
+    setTimeout(() => {
+      this.successMessage = null;
+    }, 3000);
+    
+    // Opcional: puedes limpiar los campos del formulario
+    (event.target as HTMLFormElement).reset();
+  }
+
 }
