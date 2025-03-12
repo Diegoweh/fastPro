@@ -1,6 +1,6 @@
 .industries-heading {
     color: #1a4db3;
-    font-size: 2.5rem;
+    
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -75,4 +75,34 @@
     bottom: 0;
     width: 100%; /* Se mantiene dentro del ancho de la imagen */
     font-weight: 500;
+}
+
+/* second secction */
+
+.why-choose-heading {
+    color: #ff7200;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.main-description {
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.feature-title {
+    color: #1a4db3;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.feature-description {
+    color: #6c757d;
+    font-size: 1rem;
+}
+.feature-icon {
+    color: #6c757d;
+    font-size: 2.5rem;
+    width: 80px;
+}
+.feature-container {
+    margin-bottom: 2rem;
 }
