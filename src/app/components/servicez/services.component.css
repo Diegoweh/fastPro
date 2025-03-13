@@ -12,3 +12,11 @@
     height: 100%;
     background: linear-gradient(to top, rgba(255, 140, 0, 0.5), rgba(0, 0, 139, 0.5));
 }
+
+@media (max-width: 991px) { /* Se aplica en pantallas pequeñas */
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.9); /* Fondo oscuro con transparencia */
+      padding: 1rem; /* Agrega algo de padding para mejor apariencia */
+      border-radius: 10px; /* Bordes redondeados opcionales */
+    }
+  }
