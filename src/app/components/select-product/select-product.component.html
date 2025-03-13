@@ -1,3 +1,38 @@
+<!-- header -->
+<header class="position-relative h-50 card rounded-0 border-0">
+    <div class="header-image">
+        <img style="max-height: 800px; width: 100%;" src="fpHeader3.webp" alt="FastPro" title="FastPro" fetchpriority="high" loading="lazy" class="img-fluid hdr">
+    </div>
+
+    <!-- Contenedor para el título y el texto -->
+    <div class="position-absolute bottom-0 start-0 p-5 text-white">
+        <h1 class="fw-bold">SERVICING</h1>
+        <h1 class="fw-bold">GLOBAL BRANDS</h1>
+        <p class="mb-0">Helping businesses manage all of their bulk handling needs from one source</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-50 translate-middle-x w-100 px-2">
+        <div class="container">
+            <a class="navbar-brand" href="#" title="Fast Pro">
+                <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
+                    <li class="nav-item"><a class="nav-link active text-white" routerLinkActive="active" routerLink="/home" ariaCurrentWhenActive="page" title="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/about" ariaCurrentWhenActive="page" title="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/bags" ariaCurrentWhenActive="page" title="bags">Bags</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/textiles" ariaCurrentWhenActive="page" title="textiles">Textiles</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/services" ariaCurrentWhenActive="page" title="services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/contact" ariaCurrentWhenActive="page" title="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <!-- first section -->
 <div id="selectProduct" class="container py-5">
     <div class="d-flex justify-content-between align-items-center">
@@ -9,7 +44,7 @@
 
         <!-- Image on the right -->
         <div>
-            <img src="product1.svg" alt="Product" class="img-fluid" style="max-width: 150px;">
+            <img src="product1.svg" alt="Product" title="super sack" class="img-fluid" style="max-width: 150px;">
         </div>
     </div>
 
@@ -20,7 +55,7 @@
             <div class="col-6 col-md-4">
                 <div class="product-card text-center">
                     <div class="product-image">
-                        <img src="product3.webp" alt="" class="img-fluid">
+                        <img src="product3.webp" alt="barrel bag" title="barrel bag" class="img-fluid">
                     </div>
                     <h2 class="product-title">Barrel Bag</h2>
                     <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal1">
@@ -33,7 +68,7 @@
             <div class="col-6 col-md-4">
                 <div class="product-card text-center">
                     <div class="product-image">
-                        <img src="product7.webp" alt="" class="img-fluid">
+                        <img src="product7.webp" alt="waste away" title="waste away" class="img-fluid">
                     </div>
                     <h2 class="product-title">Waste Away</h2>
                     <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal5">
@@ -46,7 +81,7 @@
             <div class="col-6 col-md-4">
                 <div class="product-card text-center">
                     <div class="product-image">
-                        <img src="product5.webp" alt="" class="img-fluid">
+                        <img src="product5.webp" alt="dewatering bag" title="dewatering bag" class="img-fluid">
                     </div>
                     <h2 class="product-title">DeWatering Bag</h2>
                     <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal3">
@@ -59,7 +94,7 @@
             <div class="col-6 col-md-4">
                 <div class="product-card text-center">
                     <div class="product-image">
-                        <img src="product6.webp" alt="" class="img-fluid">
+                        <img src="product6.webp" alt="super sack standard" title="super sack standard" class="img-fluid">
                     </div>
                     <h2 class="product-title">SUPER SACK® Standard</h2>
                     <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal4">
@@ -72,7 +107,7 @@
             <div class="col-6 col-md-4">
                 <div class="product-card text-center">
                     <div class="product-image">
-                        <img src="product4.webp" alt="" class="img-fluid">
+                        <img src="product4.webp" alt="builders bag" title="builders bag" class="img-fluid">
                     </div>
                     <h2 class="product-title">Builder's Bag</h2>
                     <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal2">
@@ -86,7 +121,7 @@
             <div class="col-6 col-md-4">
                 <div class="product-card text-center">
                     <div class="product-image">
-                        <img src="product8.webp" alt="" class="img-fluid">
+                        <img src="product8.webp" alt="accessories" title="accessories" class="img-fluid">
                     </div>
                     <h2 class="product-title">Accessories</h2>
                     <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#productModal6">
@@ -143,7 +178,7 @@
         </a>
       </div>
     </div>
-  </div>
+</div>
 
 <!-- MODALES -->
 <div class="modal fade" id="productModal1" tabindex="-1" aria-hidden="true">

@@ -1,3 +1,39 @@
+<!-- header -->
+<header class="position-relative h-50 card rounded-0 border-0">
+  <div class="header-image">
+      <img style="max-height: 800px; width: 100%;" src="fpHeader.webp" alt="FastPro" title="FastPro" fetchpriority="high" loading="lazy" class="img-fluid hdr">
+  </div>
+
+  <!-- Contenedor para el título y el texto -->
+  <div class="position-absolute bottom-0 start-0 p-5 text-white">
+      <h1 class="fw-bold">SERVICING</h1>
+      <h1 class="fw-bold">GLOBAL BRANDS</h1>
+      <p class="mb-0">Helping businesses manage all of their bulk handling needs from one source</p>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-50 translate-middle-x w-100 px-2">
+      <div class="container">
+          <a class="navbar-brand" href="#" title="Fast Pro">
+              <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
+                  <li class="nav-item"><a class="nav-link active text-white" routerLinkActive="active" routerLink="/home" ariaCurrentWhenActive="page" title="home">Home</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/about" ariaCurrentWhenActive="page" title="about">About</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/bags" ariaCurrentWhenActive="page" title="bags">Bags</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/textiles" ariaCurrentWhenActive="page" title="textiles">Textiles</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/services" ariaCurrentWhenActive="page" title="services">Services</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/contact" ariaCurrentWhenActive="page" title="contact">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+
+
 <!-- first section -->
 <div class="container">
   <div class="col-12 col-md-3 mt-2">
@@ -9,24 +45,55 @@
         <h1 style="color: #eb7700;" class="display-4 fw-bold lh-1 mb-3 ">What We Do</h1>
         <p class="lead">FASTPRO ensures your product is of the upmost quality, and with our virtually limitless global production capacity, we can provide bulk bags in a timely, cost-effective manner. In addition, we stock over 360,000 FIBCs for immediate delivery.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <a routerLink="/bags" class="btn btn-primary btn-lg px-4 gap-3">Products</a>
-            <a routerLink="/services" class="btn btn-outline-secondary btn-lg px-4">Services</a>
+            <a routerLink="/bags" class="btn btn-primary btn-lg px-4 gap-3" title="products">Products</a>
+            <a routerLink="/services" class="btn btn-outline-secondary btn-lg px-4" title="services">Services</a>
             
         </div>
       </div>
-      <div class="col-lg-4   shadow">
-          <img class="rounded-end img-fluid mb-2" src="why1.webp" alt="" width="720">
+      <div class="col-lg-4 shadow">
+          <img class="rounded-end img-fluid mb-2" src="why1.webp" alt="why us" title="why us" width="720">
       </div>
     </div>
 </div>
 
 <!-- second section -->
 
+<div class="container py-5">
+
+  <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+      <p class="col-md-8 fs-4">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <button class="btn btn-primary btn-lg" type="button">Example button</button>
+    </div>
+  </div>
+
+  <div class="row align-items-md-stretch">
+    <div class="col-md-6">
+      <div class="h-100 p-5 text-bg-light rounded-3">
+        <h2>Change the background</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <button class="btn btn-outline-light" type="button">Example button</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+        <h2>Add borders</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <button class="btn btn-outline-primary" type="button">Example button</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- third section -->
+
 <div class="container  py-4" id="featured-3">
   <h2 style="color: #1a4db3;"style="color: #1a4db3;" class="pb-2 border-bottom">More</h2>
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="feature col">
-      <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient mb-3">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#eb7700" class="bi bi-person-check-fill" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
           <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
@@ -34,7 +101,7 @@
       </div>
       <h3 class="fs-2 text-body-emphasis">About us</h3>
       <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <a routerLink="/about" class="icon-link">
+      <a routerLink="/about" class="icon-link" title="about">
         About us
         <svg class="bi"><use xlink:href="#chevron-right"/></svg>
       </a>
@@ -47,7 +114,7 @@
       </div>
       <h3 class="fs-2 text-body-emphasis">Textiles</h3>
       <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <a routerLink="/textiles" class="icon-link">
+      <a routerLink="/textiles" class="icon-link" title="textiles">
         Textiles
         <svg class="bi"><use xlink:href="#chevron-right"/></svg>
       </a>
@@ -60,7 +127,7 @@
       </div>
       <h3 class="fs-2 text-body-emphasis">Contact us</h3>
       <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <a routerLink="/contact" class="icon-link">
+      <a routerLink="/contact" class="icon-link" title="contact">
         Contact
         <svg class="bi"><use xlink:href="#chevron-right"/></svg>
       </a>

@@ -1,52 +1,33 @@
 <header class="position-relative h-50 card rounded-0 border-0">
-    <div class="">
-        <img style="max-height: 800px; width: 100%;"  src="fpHeader.webp" alt="FastPro" fetchpriority="high" loading="lazy" class="img-fluid hdr">
+    <div>
+        <img style="max-height: 800px; width: 100%;" src="fpHeader.webp" alt="FastPro" title="FastPro" fetchpriority="high" loading="lazy" class="img-fluid hdr">
     </div>
+
+    <!-- Contenedor para el título y el texto -->
+    <div class="position-absolute bottom-0 start-0 p-5 text-white">
+        <h1 class="fw-bold">SERVICING</h1>
+        <h1 class="fw-bold">GLOBAL BRANDS</h1>
+        <p class="mb-0">Helping businesses manage all of their bulk handling needs from one source</p>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-50 translate-middle-x w-100 px-2">
-      <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#" title="Fast Pro">
-            
-              <img src="fpLogo.svg" alt="Fastpro" width="150" loading="lazy" class="logo-responsive">
-          </a>
-          <!-- Botón de colapso en pantallas pequeñas -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Menú de navegación -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
-                <!-- Enlace a Home -->
-                <li class="nav-item">
-                    <a class="nav-link active text-white" routerLinkActive="active" routerLink="/home"
-                    ariaCurrentWhenActive="page" >Home</a>
-                </li>
-                <!-- Enlace a About -->
-                <li class="nav-item">
-                    <a class="nav-link text-white" routerLinkActive="active" routerLink="/about"
-                    ariaCurrentWhenActive="page">About</a>
-                </li>
-                <!-- Enlace a Bags -->
-                <li class="nav-item">
-                    <a class="nav-link text-white" routerLinkActive="active" routerLink="/bags"
-                    ariaCurrentWhenActive="page" >Bags</a>
-                </li>
-                <!-- Enlace a Textiles -->
-                <li class="nav-item">
-                    <a class="nav-link text-white" routerLinkActive="active" routerLink="/textiles" ariaCurrentWhenActive="page" >Textiles</a>
-                </li>
-                <!-- Enlace a Nosotros -->
-                <li class="nav-item">
-                    <a class="nav-link text-white" routerLinkActive="active" routerLink="/services"
-                    ariaCurrentWhenActive="page" >Services</a>
-                </li>                  
-                  <!-- Enlace a Contacto -->
-                <li class="nav-item">
-                      <a class="nav-link text-white" routerLinkActive="active" routerLink="/contact"
-                      ariaCurrentWhenActive="page" >Contact</a>
-                </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+        <div class="container">
+            <a class="navbar-brand" href="#" title="Fast Pro">
+                <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
+                    <li class="nav-item"><a class="nav-link active text-white" routerLinkActive="active" routerLink="/home" ariaCurrentWhenActive="page" title="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/about" ariaCurrentWhenActive="page" title="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/bags" ariaCurrentWhenActive="page" title="bags">Bags</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/textiles" ariaCurrentWhenActive="page" title="textiles">Textiles</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/services" ariaCurrentWhenActive="page" title="services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/contact" ariaCurrentWhenActive="page" title="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
