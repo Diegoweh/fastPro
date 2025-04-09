@@ -19,4 +19,24 @@
       padding: 1rem; /* Agrega algo de padding para mejor apariencia */
       border-radius: 10px; /* Bordes redondeados opcionales */
     }
+}
+
+@media (max-width: 768px) {
+  .header-text {
+    bottom: auto !important;
+    top: 50%; /* centrado vertical */
+    transform: translateY(-50%);
+    padding: 1rem !important;
+    
+    
+    width: 100%;
   }
+
+  .header-text h2 {
+    font-size: 1rem;
+  }
+
+  .header-text p {
+    font-size: 0.7rem;
+  }
+}
