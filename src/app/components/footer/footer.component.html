@@ -1,71 +1,54 @@
-<footer class="py-5 bg-body-secondary">
+<footer class="py-4 bg-body-secondary">
     <div class="container">
-        <div class="row">
-            <!-- Logo and Description Column -->
-            <div class="col-md-4 col-12 mb-3">
-                <h5 style="color: #eb7700;" class="text-uppercase mb-4">
-                    fastpro
-                </h5>                
-                <p class="text-secondary text-wrap fs-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis nibh sed nulla accumsan porta vitae sit amet diam. Proin laoreet, metus at finibus tristique, turpis orci.
-                </p>
-                <img style="width: 150px;" src="fplogoBlue.svg" alt="Fast Pro" title="fastpro" class="img-fluid mt-3 mb-3" loading="lazy">                
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <h5 style="color: #eb7700" class="text-uppercase mb-3 ">fastpro</h5>
+          <p class="text-secondary fs-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis nibh sed nulla accumsan porta vitae sit amet diam.
+          </p>
+          <img src="fplogoBlue.svg" alt="Fast Pro" title="fastpro" class="img-fluid mt-2" style="max-width: 140px;" loading="lazy">
+        </div>
+  
+        <!-- Menu -->
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <h6 style="color: #eb7700" class="text-uppercase mb-3 ">menu</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a routerLink="/home" class="text-decoration-none">Home</a></li>
+            <li class="mb-2"><a routerLink="/about" class="text-decoration-none">About</a></li>
+            <li class="mb-2"><a routerLink="/bags" class="text-decoration-none">Bags</a></li>
+            <li class="mb-2"><a routerLink="textiles" class="text-decoration-none">Textiles</a></li>
+            <li class="mb-2"><a routerLink="/services" class="text-decoration-none">Services</a></li>
+          </ul>
+        </div>
+  
+        <!-- Subscription -->
+        <div class="col-12 col-md-6">
+          <h6 class="text-uppercase text-primary">new products & promotions</h6>
+          <p style="color: #eb7700" class=" fs-6 mb-3">
+            Sign up to receive email updates on new products announcements and special promotions.
+          </p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="email" class="form-control form-control-sm" placeholder="Email address" required>
+            <button class="btn btn-primary btn-sm" type="button" (click)="validateEmail(subscriptionModal)">Subscribe</button>
+          </div>
+  
+          <!-- Modal -->
+          <ng-template #subscriptionModal let-modal>
+            <div class="modal-header">
+              <h5 style="color: #eb7700" class="modal-title ">Subscription Successful</h5>
+              <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
             </div>
-
-            <!-- Shop Column -->
-            <div class="col-md-2 col-6 mb-3 ms-2">
-                <h6 style="color: #eb7700;" class="text-uppercase mb-3">menu</h6>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a routerLink="/home"  class="text-decoration-none">Home</a></li>
-                    <li class="mb-2"><a routerLink="/about" class="text-decoration-none">About</a></li>
-                    <li class="mb-2"><a routerLink="/bags" class="text-decoration-none">Bags</a></li>
-                    <li class="mb-2"><a routerLink="textiles" class="text-decoration-none">Textiles</a></li>
-                    <li class="mb-2"><a routerLink="/services" class="text-decoration-none">Services</a></li>
-                    <!-- <li class="mb-2"><a routerLink="/contact" class="text-decoration-none">Contact</a></li> -->
-                </ul>
+            <div class="modal-body">
+              Thank you for subscribing! You'll receive our latest updates in your inbox.
             </div>
-
-            <!-- Company Column -->
-            <!-- <div class="col-md-2 col-6 mb-3">
-                <h6 style="color: #eb7700;" class="text-uppercase h6 mb-3">company</h6>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none">Services</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none">Technical</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none">Contact</a></li>
-                </ul>
-            </div> -->
-
-            <!-- Contact Column -->
-            <div class="col-md-5 col-12 mb-3">
-                <h6 class="text-uppercase text-primary">
-                    new products & promotions
-                </h6>
-                <p style="color: #eb7700;" class="fs-6">
-                    Sign up to receive email updates on new products announcements and special promotions.
-                </p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                    <label for="newsletter1" class="visually-hidden">Email address</label>
-                    <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
-                    <button class="btn btn-primary" type="button" (click)="validateEmail(subscriptionModal)">Subscribe</button>
-                </div>
-                
-                <!-- Modal -->
-                <ng-template #subscriptionModal let-modal>
-                    <div class="modal-header">
-                        <h5 style="color: #eb7700;" class="modal-title">Subscription Successful</h5>
-                        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
-                    </div>
-                    <div class="modal-body">
-                        Thank you for subscribing! You'll receive our latest updates in your inbox.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" (click)="modal.close()">Close</button>
-                    </div>
-                </ng-template>
-                
-                
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" (click)="modal.close()">Close</button>
             </div>
-        </div>       
+          </ng-template>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
+  

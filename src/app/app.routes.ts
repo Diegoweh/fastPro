@@ -6,6 +6,7 @@ import { SelectProductComponent } from './components/select-product/select-produ
 import { IndustriesComponent } from './components/industries/industries.component';
 import { ServicezComponent } from './components/servicez/services.component';
 import { ClientsComponent } from './components/clients/clients.component';
+import { ProductsPageComponent } from './components/products-page/products-page.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,5 +17,6 @@ export const routes: Routes = [
   { path: 'industries', component: IndustriesComponent },
   { path: 'services', component: ServicezComponent },
   { path: 'contact', component: ClientsComponent },
+  { path: 'products', component: ProductsPageComponent },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];

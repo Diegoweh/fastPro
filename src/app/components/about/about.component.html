@@ -6,116 +6,173 @@
 
     <!-- Contenedor para el título y el texto -->
     <div class="position-absolute bottom-0 start-0 p-5 text-white header-text">
-        <h2 class="fw-bold text-uppercase">High</h2>
-        <h2 class="fw-bold text-uppercase">Quality Bags</h2>
-        <p class="mb-0">for businesses worldwide</p>
+        <h2 class="fw-bold text-uppercase">Designs</h2>
+        <h2 class="fw-bold text-uppercase">Engineered</h2>
+        <p class="mb-0">for Success</p>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-50 translate-middle-x w-100 px-2">
-        <div class="container">
-            <a class="navbar-brand" href="#" title="Fast Pro">
-                <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
-                    <li class="nav-item"><a class="nav-link active text-white" routerLinkActive="active" routerLink="/home" ariaCurrentWhenActive="page" title="home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/about" ariaCurrentWhenActive="page" title="about">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/bags" ariaCurrentWhenActive="page" title="bags">Bags</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/textiles" ariaCurrentWhenActive="page" title="textiles">Textiles</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/services" ariaCurrentWhenActive="page" title="services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/contact" ariaCurrentWhenActive="page" title="contact">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#" title="Fast Pro">
+          <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
+            <li class="nav-item">
+              <a class="nav-link active text-white" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" title="home">Home</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-white" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" title="about">About</a>
+            </li>
+    
+            <!-- Dropdown: Products -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" routerLink="/products" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" routerLink="/bags" title="bags">Bags</a></li>
+                <li><a class="dropdown-item" routerLink="/textiles" title="textiles">Textiles</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-white" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page" title="services">Services</a>
+            </li>
+    
+            <!-- Dropdown: Resources -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item" routerLink="/features" routerLinkActive="active" title="FAST Features">FAST Features</a></li>
+                <li><a class="dropdown-item" routerLink="/perspectives" routerLinkActive="active" title="PRO Perspectives">PRO Perspectives</a></li>
+                <li><a class="dropdown-item" routerLink="/faqs" routerLinkActive="active" title="FAQs">FAQs</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" title="contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 </header>
 
 
 <!-- first section -->
 <div class="py-5 container">
+    <!-- Header Section -->
     <div class="row mb-5">
-        <div class="col-12 col-md-3">
-            <!-- <p class="about-us-label h5">ABOUT US</p> -->
+      <div class="col-12 col-md-3">
+        <!-- Reserved for future content -->
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start mb-4 py-4">
+          <!-- Logo -->
+          <img src="fpLogo2.svg" alt="" class="img-fluid mb-3 mb-md-0 me-md-4" style="width: 80px;">
+        
+          <!-- Title -->
+          <h1 class="about-heading fs-4 fs-md-3 fw-bold">
+            <span style="background-color: #eb7600;" class="text-white px-4 py-1 d-inline-block">Fast. Strong. Reliable.</span><br class="d-none d-md-block">
+            <span style="color: #1a4db3;" class="">The bags that work as hard as you do.</span>
+          </h1>
         </div>
-        <div class="col-12 col-md-9">
-            <div class="d-flex align-items-center mb-4 py-5">
-                <!-- Placeholder for logo - user will add later -->
-                 <img style="width: 80px;"  class="me-4 img-fluid" src="fpLogo2.svg" alt="">
-               
-                <h1 class="about-heading">One of the most experienced<br>manufacturer of bulk bags</h1>
-            </div>
-            
-            <div class="divider"></div>
-            
-            <p class="subtitle mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                Maecenas sodales lectus vitae efficitur aliquet.
-            </p>
-            
-            <!-- <a href="#" class="btn about-btn text-white">About company</a> -->
-        </div>
+        
+  
+        <!-- Divider -->
+        <div class="divider my-3"></div>
+  
+        <!-- Subtitle -->
+        <p class="subtitle text-muted fs-6">
+          Fast Pro Bags and Textiles, Inc. is committed to delivering the same high standards of quality, safety, innovation, and operational efficiency that our customers have come to expect from us.<br class="d-none d-md-block">
+          
+        </p>
+      </div>
     </div>
-    
-    <div class="row mt-5">
-        <div class="col-12 col-md-3 mb-4">
-            <div class="stats-box">
-                <div class="stats-number mb-3">1973</div>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+  
+    <!-- Stats Section -->
+    <div class="row mt-4">
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <div class="stats-box">
+          <div class="stats-number fs-2 fw-bold mb-2">1969</div>
+          <p class="text-muted small">B.A.G. Corp. founded by Bob Williamson, pioneering the FIBC industry.</p>
         </div>
-        <div class="col-12 col-md-3 mb-4">
-            <div class="stats-box">
-                <div class="stats-number mb-3">2025</div>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <div class="stats-box">
+          <div class="stats-number fs-2 fw-bold mb-2">2025</div>
+          <p class="text-muted small">Fast Pro Bags and Textiles Inc. rebrand for our Mexico manufacturing operations after “BAG Corp®”, “Super Sack®”, and Distribution Business were sold to United Bag Inc.</p>
         </div>
-        <div class="col-12 col-md-3 mb-4">
-            <div class="stats-box">
-                <div class="stats-number mb-3">1500</div>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <div class="stats-box">
+          <div class="stats-number fs-2 fw-bold mb-2">4 - 6</div>
+          <p class="text-muted small">Standard Lead-Time for Bags and Textiles – customization, material requirements, and approval processes may extend this.</p>
         </div>
-        <div class="col-12 col-md-3 mb-4">
-            <div class="stats-box">
-                <div class="stats-number mb-3">+25</div>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <div class="stats-box">
+          <div class="stats-number fs-2 fw-bold mb-2">+25</div>
+          <p class="text-muted small">Years of Experience in Near-shore Mexico Manufacturing and Engineering Services.</p>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  
 
 <!-- second section -->
 
-<div class="container border-0 card mb-3 py-4">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="au1.webp" class="img-fluid rounded-start" alt="fastpro" title="about us">
+<!-- WHO WE ARE -->
+<div class="container border-0 card mb-4 py-4">
+    <div class="row g-0 flex-column flex-md-row align-items-center">
+      <!-- Imagen -->
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
+        <img src="au1.webp" class="img-fluid rounded" alt="fastpro" title="about us">
       </div>
+      <!-- Texto -->
       <div class="col-md-8">
-        <div class="card-body">
-          <h5 style="color: #eb7700;" class="h3 card-title">Who We Are</h5>
-          <p class="card-text">Who We Are
-            Headquartered out of Richardson, TX and a division of United Bags, BAG Corp is a bulk handling and supply chain solutions provider structured with one mission in mind: Helping businesses manage all of their bulk handling needs from one source. BAG Corp's manufacturing resources for the SUPER SACK® container and related FIBC products include our North American manufacturing operation located in Mexico in combination with our international manufacturing and warehousing partners who ensure all our FIBCs meet the tough BAG Corp specification and performance standards.</p>
-          
+        <div class="card-body px-md-4">
+          <h5 class="h3 card-title">
+            <span style="color: #1a4db3;">FAST:</span>
+            <span style="color: #eb7700;"> What We Do</span>
+          </h5>
+          <p class="card-text small text-muted">
+            At Fast Pro Bags and Textiles, Inc., we don’t just provide packaging solutions—we forge strong partnerships. By truly understanding your needs, we become your trusted advisor, collaborating closely to create custom solutions that drive efficiency and aim to reduce costs. With our deep industry expertise, flexible manufacturing, and a dedicated team of engineers, we deliver high-quality bulk bags and textiles faster than anyone else. Our North American production facilities ensure you receive what you need, when you need it—reliably and efficiently. Count on us to help you meet your packaging goals with speed, precision, and exceptional value.
+          </p>
         </div>
       </div>
     </div>
-</div>
-
-<div class="container border-0 card mb-3 py-4">
-    <div class="row g-0">      
+  </div>
+  
+  <!-- WHAT WE DO -->
+  <div class="container border-0 card mb-4 py-4">
+    <div class="row g-0 flex-column-reverse flex-md-row align-items-center">
+      <!-- Texto -->
       <div class="col-md-8">
-        <div class="card-body">
-          <h5 style="color: #eb7700;" class="h3 card-title">What We Do</h5>
-          <p class="card-text">What We Do
-            BAG Corp is a trusted advisor to clients first and foremost. It is through getting to know our clients specific need, we are able to help them meet their supply chain goals. These goals are met through our advisory services, engineering services, technical support, supply chain and logistics management. BAG Corp ensures your product is of the upmost quality, and with our virtually limitless global production capacity, we can provide bulk bags in a timely, cost-effective manner. In addition, we stock over 360,000 FIBCs for immediate delivery.</p>     
+        <div class="card-body px-md-4">
+          <h5 class="h3 card-title">
+            <span style="color: #1a4db3;">PRO:</span>
+            <span style="color: #eb7700;"> Who We Are</span>
+          </h5>
+          <p class="card-text small text-muted">
+            Headquartered in Richardson, TX, Fast Pro Bags and Textiles, Inc. delivers innovative packaging systems and efficient supply chain solutions tailored for the bulk bag industry. We’re driven by a clear purpose: to manufacture products that exceed expectations—built for performance, with rapid delivery and unparalleled flexibility. Thanks to our North American manufacturing facilities in Mexico, we offer industry-leading lead times, even for small production runs and highly customized orders. Whether it's bulk bags, industrial textiles, or FIBC products, our experienced engineers are committed to delivering high-quality, tailor-made solutions that excel in even the most demanding environments.
+          </p>
         </div>
       </div>
-      <div class="col-md-4">
-        <img src="au2.webp" class="img-fluid rounded-start" alt="fastpro" title="about us">
+      <!-- Imagen -->
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
+        <img src="au2.webp" class="img-fluid rounded" alt="fastpro" title="about us">
       </div>
     </div>
-</div>
+  </div>
+  

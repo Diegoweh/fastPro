@@ -65,4 +65,21 @@
       font-size: 0.7rem;
     }
   }
+
+  @media (max-width: 768px) {
+    .logo-responsive {
+      width: 100px !important; /* Tamaño más pequeño para el logo */
+    }
+  
+    .navbar-toggler {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.9rem; /* Más pequeño */
+    }
+  
+    .navbar-toggler-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
   

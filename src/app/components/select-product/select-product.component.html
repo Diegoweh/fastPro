@@ -6,31 +6,66 @@
 
     <!-- Contenedor para el título y el texto -->
     <div class="position-absolute bottom-0 start-0 p-5 text-white header-text">
-        <h2 class="fw-bold">TRUSTED</h2>
-        <h2 class="fw-bold">PACKAGING</h2>
-        <p class="mb-0">for global businesses</p>
+        <h2 class="fw-bold">FAST FIBCs. PRO</h2>
+        <h2 class="fw-bold">Mexico Manufacturing</h2>
+        <p class="mb-0">The Bags that work as hard as you do.</p>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-50 translate-middle-x w-100 px-2">
         <div class="container">
-            <a class="navbar-brand" href="#" title="Fast Pro">
-                <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
-                    <li class="nav-item"><a class="nav-link active text-white" routerLinkActive="active" routerLink="/home" ariaCurrentWhenActive="page" title="home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/about" ariaCurrentWhenActive="page" title="about">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/bags" ariaCurrentWhenActive="page" title="bags">Bags</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/textiles" ariaCurrentWhenActive="page" title="textiles">Textiles</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/services" ariaCurrentWhenActive="page" title="services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/contact" ariaCurrentWhenActive="page" title="contact">Contact</a></li>
+          <a class="navbar-brand" href="#" title="Fast Pro">
+            <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
+              <li class="nav-item">
+                <a class="nav-link active text-white" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" title="home">Home</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link text-white" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" title="about">About</a>
+              </li>
+      
+              <!-- Dropdown: Products -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="productsDropdown">
+                  <li><a class="dropdown-item" routerLink="/bags" routerLinkActive="active" title="bags">Bags</a></li>
+                  <li><a class="dropdown-item" routerLink="/textiles" routerLinkActive="active" title="textiles">Textiles</a></li>
                 </ul>
-            </div>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link text-white" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page" title="services">Services</a>
+              </li>
+      
+              <!-- Dropdown: Resources -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resources
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="resourcesDropdown">
+                  <li><a class="dropdown-item" routerLink="/features" routerLinkActive="active" title="FAST Features">FAST Features</a></li>
+                  <li><a class="dropdown-item" routerLink="/perspectives" routerLinkActive="active" title="PRO Perspectives">PRO Perspectives</a></li>
+                  <li><a class="dropdown-item" routerLink="/faqs" routerLinkActive="active" title="FAQs">FAQs</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" title="contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 </header>
 
 <!-- first section -->
@@ -134,9 +169,9 @@
     </div>
 </div>
 
-<div class="container  py-4" id="featured-3">
-    <h2 style="color: #1a4db3;"style="color: #1a4db3;" class="pb-2 border-bottom">More</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+<div class="container py-4" id="featured-3">
+    <h2 style="color: #1a4db3;" class="pb-2 border-bottom text-center text-md-start">More</h2>
+    <div class="row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3">
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient mb-3">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#eb7700" class="bi bi-person-check-fill" viewBox="0 0 16 16">
@@ -144,12 +179,14 @@
             <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
           </svg>
         </div>
-        <h3 class="fs-2 text-body-emphasis">About us</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a routerLink="/about" class="icon-link">
-          About us
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
+        <h3 class="fs-3 text-body-emphasis text-center text-md-start">About us</h3>
+        <p class="text-center text-md-start">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <div class="text-center text-md-start">
+          <a routerLink="/about" class="icon-link">
+            About us
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
       </div>
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
@@ -157,12 +194,14 @@
             <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
           </svg>
         </div>
-        <h3 class="fs-2 text-body-emphasis">Textiles</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a routerLink="/textiles" class="icon-link">
-          Textiles
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
+        <h3 class="fs-3 text-body-emphasis text-center text-md-start">Textiles</h3>
+        <p class="text-center text-md-start">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <div class="text-center text-md-start">
+          <a routerLink="/textiles" class="icon-link">
+            Textiles
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
       </div>
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
@@ -170,12 +209,14 @@
             <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
           </svg>
         </div>
-        <h3 class="fs-2 text-body-emphasis">Contact us</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a routerLink="/contact" class="icon-link">
-          Contact
-          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-        </a>
+        <h3 class="fs-3 text-body-emphasis text-center text-md-start">Contact us</h3>
+        <p class="text-center text-md-start">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <div class="text-center text-md-start">
+          <a routerLink="/contact" class="icon-link">
+            Contact
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
       </div>
     </div>
 </div>

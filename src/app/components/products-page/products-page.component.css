@@ -1,0 +1,81 @@
+/* headerText */
+@media (max-width: 768px) {
+  .header-text {
+    bottom: auto !important;
+    top: 50%; /* centrado vertical */
+    transform: translateY(-50%);
+    padding: 1rem !important;
+    
+    
+    width: 100%;
+  }
+
+  .header-text h2 {
+    font-size: 1rem;
+  }
+
+  .header-text p {
+    font-size: 0.7rem;
+  }
+}
+
+/* navBarMenu */
+@media (max-width: 991px) { /* Se aplica en pantallas pequeñas */
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.9); /* Fondo oscuro con transparencia */
+      padding: 1rem; /* Agrega algo de padding para mejor apariencia */
+      border-radius: 10px; /* Bordes redondeados opcionales */
+    }
+}
+
+/* navbar */
+@media (max-width: 768px) {
+  .logo-responsive {
+    width: 100px !important; /* Tamaño más pequeño para el logo */
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem; /* Más pequeño */
+  }
+
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* svg animation */
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+  .rotate-gear {
+    transition: transform 0.6s ease;
+}
+  
+  .rotate-gear:hover {
+    transform: rotate(360deg);
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+}
+
+.bounce-svg {
+    transition: transform 0.3s ease;
+  }
+  .bounce-svg:hover {
+    animation: bounce 1s ease-in-out;
+  }
+  

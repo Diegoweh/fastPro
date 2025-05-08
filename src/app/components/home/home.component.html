@@ -1,3 +1,4 @@
+
 <!-- header -->
 <header class="position-relative h-50 card rounded-0 border-0">
   <div class="header-image">
@@ -11,76 +12,128 @@
       <p class="mb-0">Helping businesses manage all of their bulk handling needs from one source</p>
   </div>
 
+  
+
+
   <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-50 translate-middle-x w-100 px-2">
-      <div class="container">
-          <a class="navbar-brand" href="#" title="Fast Pro">
-              <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
-                  <li class="nav-item"><a class="nav-link active text-white" routerLinkActive="active" routerLink="/home" ariaCurrentWhenActive="page" title="home">Home</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/about" ariaCurrentWhenActive="page" title="about">About</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/bags" ariaCurrentWhenActive="page" title="bags">Bags</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/textiles" ariaCurrentWhenActive="page" title="textiles">Textiles</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/services" ariaCurrentWhenActive="page" title="services">Services</a></li>
-                  <li class="nav-item"><a class="nav-link text-white" routerLinkActive="active" routerLink="/contact" ariaCurrentWhenActive="page" title="contact">Contact</a></li>
-              </ul>
-          </div>
+    <div class="container">
+      <a class="navbar-brand" href="#" title="Fast Pro">
+        <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
+          <li class="nav-item">
+            <a class="nav-link active text-white" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" title="home">Home</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" title="about">About</a>
+          </li>
+  
+          <!-- Dropdown: Products -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" routerLink="/products" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  routerLinkActive="active">
+              Products
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" routerLink="/bags" title="bags">Bags</a></li>
+              <li><a class="dropdown-item" routerLink="/textiles" title="textiles">Textiles</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page" title="services">Services</a>
+          </li>
+  
+          <!-- Dropdown: Resources -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" routerLink="/features" routerLinkActive="active" title="FAST Features">FAST Features</a></li>
+              <li><a class="dropdown-item" routerLink="/perspectives" routerLinkActive="active" title="PRO Perspectives">PRO Perspectives</a></li>
+              <li><a class="dropdown-item" routerLink="/faqs" routerLinkActive="active" title="FAQs">FAQs</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" title="contact">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
+  
 </header>
 
 
 <!-- first section -->
-<div class="container">
-  <div class="col-12 col-md-3 mt-2">
-    
-  </div>
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0">
-      <!-- <p style="color: #1a4db3;" class="h5">HOME</p> -->
-      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">        
-        <h1 style="color: #eb7700;" class="display-4 fw-bold lh-1 mb-3 ">What We Do</h1>
-        <p class="lead">FASTPRO ensures your product is of the upmost quality, and with our virtually limitless global production capacity, we can provide bulk bags in a timely, cost-effective manner. In addition, we stock over 360,000 FIBCs for immediate delivery.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <a routerLink="/bags" class="btn btn-primary btn-lg px-4 gap-3" title="products">Products</a>
-            <a routerLink="/services" class="btn btn-outline-secondary btn-lg px-4" title="services">Services</a>
-            
-        </div>
-      </div>
-      <div class="col-lg-4 shadow">
-          <img class="rounded-end img-fluid mb-2" src="why1.webp" alt="why us" title="why us" width="720">
+<div class="container px-3 px-lg-0">
+  <div class="row g-4 g-lg-0 p-3 p-lg-4 pb-lg-0 align-items-center rounded-3 border-0">
+    <div class="col-lg-7 order-lg-1 order-2 p-0 p-lg-3 pt-lg-3">        
+      <h1 style="color: #eb7700;" class="display-5 display-lg-4 fw-bold lh-1 mb-3 text-center text-lg-start">What We Do</h1>
+      <p class="lead text-center text-lg-start mb-4 mb-lg-3">
+        At Fast Pro Bags and Textiles, Inc., we do more than deliver packaging, we build lasting partnerships. By understanding your unique needs, we serve as your trusted advisor, creating custom solutions that boost efficiency and reduce costs. Backed by deep industry expertise, agile North American manufacturing, and a dedicated engineering team, we produce high-quality bulk bags and textiles with unmatched speed and precision. Count on us to deliver exactly what you need.
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start mb-4 mb-lg-3">
+        <a routerLink="/bags" class="btn btn-outline-primary btn-lg px-4 me-md-2" title="products">Bags</a>
+        <a routerLink="/textiles" class="btn btn-outline-primary btn-lg px-4 me-md-2" title="products">Textiles</a>
+        <a routerLink="/services" class="btn btn-outline-secondary btn-lg px-4" title="services">Services</a>
       </div>
     </div>
+    <div class="col-12 col-lg-5 order-lg-2 order-2 mb-4 mb-lg-0">
+      <img class="img-fluid rounded shadow-lg" src="why1.webp" alt="why us" title="why us" loading="lazy">
+    </div>
+  </div>
 </div>
 
 <!-- second section -->
 
-<div class="container py-5">
+<div class="container py-3 py-md-5">
 
-  <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-    <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-      <p class="col-md-8 fs-4">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <button class="btn btn-primary btn-lg" type="button">Example button</button>
+  <!-- Main Jumbotron -->
+  <div class="p-3 p-md-5 mb-4 mb-md-5 bg-body-tertiary rounded-3 border shadow">
+    <div class="container-fluid py-2 py-md-3">
+      <h1 style="color: #eb7700;" class="display-6 fw-bold text-center text-md-start">Built for Performance. Powered by Partnerships</h1>
+      <p class="col-12 col-md-10 fs-5 text-center text-md-start mx-auto mx-md-0">
+        At Fast Pro Bags and Textiles, Inc., we combine North American production, fast lead times, and dedicated engineering support to deliver custom packaging solutions that meet your exact needs. With a reputation for proven quality and a commitment to acting as your trusted advisor, we help you move faster, operate smarter, and achieve more.”
+      </p>
+      <div class="text-center text-md-start">
+        <button class="btn btn-outline-primary btn-lg mt-3" type="button">Get a Quote</button>
+      </div>
     </div>
   </div>
 
-  <div class="row align-items-md-stretch">
-    <div class="col-md-6">
-      <div class="h-100 p-5 text-bg-light rounded-3">
-        <h2>Change the background</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <button class="btn btn-outline-light" type="button">Example button</button>
+  <!-- Cards Row -->
+  <div class="row g-3 g-md-4 align-items-md-stretch">
+    <div class="col-12 col-md-6">
+      <div class="h-100 p-4 p-md-5 text-bg-light rounded-3 border shadow">
+        <h2 style="color: #eb7700;" class="text-center text-md-start">Fast Features</h2>
+        <p class="text-center text-md-start">
+          Stay up-to-date with our latest announcements and notable content. Here, we share valuable insights and key updates to keep you informed and ahead of the curve
+        </p>
+        <div class="text-center text-md-start">
+          <button class="btn btn-outline-dark btn-lg mt-2" type="button">Learn More</button>
+        </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="h-100 mt-3 p-5 bg-body-tertiary border rounded-3">
-        <h2>Add borders</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <button class="btn btn-outline-primary" type="button">Example button</button>
+    
+    <div class="col-12 col-md-6">
+      <div class="h-100 mt-0 mt-md-3 p-4 p-md-5 bg-body-tertiary border shadow rounded-3">
+        <h2 style="color: #eb7700;" class="text-center text-md-start">Pro Perspectives</h2>
+        <p class="text-center text-md-start">
+          Explore valuable perspectives, practical insights, and in-depth knowledge on key topics to help you stay informed and make smarter, more effective decisions.
+        </p>
+        <div class="text-center text-md-start">
+          <button class="btn btn-outline-primary btn-lg mt-2" type="button">Learn More</button>
+        </div>
       </div>
     </div>
   </div>
@@ -89,22 +142,24 @@
 
 <!-- third section -->
 
-<div class="container  py-4" id="featured-3">
-  <h2 style="color: #1a4db3;"style="color: #1a4db3;" class="pb-2 border-bottom">More</h2>
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+<div class="container py-4" id="featured-3">
+  <h2 style="color: #1a4db3;" class="pb-2 border-bottom text-center text-md-start">More</h2>
+  <div class="row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3">
     <div class="feature col">
-      <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient mb-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#eb7700" class="bi bi-person-check-fill" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
           <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
         </svg>
       </div>
-      <h3 class="fs-2 text-body-emphasis">About us</h3>
-      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <a routerLink="/about" class="icon-link" title="about">
-        About us
-        <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-      </a>
+      <h3 class="fs-3 text-body-emphasis text-center text-md-start">About us</h3>
+      <p class="text-center text-md-start">Fast Pro Bags and Textiles, Inc. is committed to delivering the same high standards of quality, safety, innovation, and operational efficiency that our customers have come to expect from us.</p>
+      <div class="text-center text-md-start">
+        <a routerLink="/about" class="icon-link">
+          About us
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
     </div>
     <div class="feature col">
       <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
@@ -112,12 +167,14 @@
           <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
         </svg>
       </div>
-      <h3 class="fs-2 text-body-emphasis">Textiles</h3>
-      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <a routerLink="/textiles" class="icon-link" title="textiles">
-        Textiles
-        <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-      </a>
+      <h3 class="fs-3 text-body-emphasis text-center text-md-start">Services</h3>
+      <p class="text-center text-md-start">Fast Pro is your trusted advisor, offering expert engineering support and customized solutions tailored to your specific needs. With a focus on quick turnaround, we help you meet your supply chain goals efficiently and effectively</p>
+      <div class="text-center text-md-start">
+        <a routerLink="/services" class="icon-link">
+          Services
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
     </div>
     <div class="feature col">
       <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
@@ -125,12 +182,14 @@
           <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
         </svg>
       </div>
-      <h3 class="fs-2 text-body-emphasis">Contact us</h3>
-      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <a routerLink="/contact" class="icon-link" title="contact">
-        Contact
-        <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-      </a>
+      <h3 class="fs-3 text-body-emphasis text-center text-md-start">Contact us</h3>
+      <p class="text-center text-md-start">Contact us now for customized solutions, expert insights, and fast, professional service. We’re here to help you drive success—let’s achieve it together!</p>
+      <div class="text-center text-md-start">
+        <a routerLink="/contact" class="icon-link">
+          Contact
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
     </div>
   </div>
 </div>

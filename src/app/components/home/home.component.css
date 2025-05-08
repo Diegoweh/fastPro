@@ -13,6 +13,33 @@
     background: linear-gradient(to top, rgba(255, 140, 0, 0.2), rgba(0, 0, 139, 0.3));
 }
 
+.supernav-bar {
+  background-color: #eb7600cf;
+}
+
+.supernav-bar a {
+  color: white;
+}
+
+.supernav-bar a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .supernav-bar span {
+    display: block;
+    text-align: center;
+  }
+
+  .supernav-bar .btn {
+    width: 100%;
+  }
+}
+
+
+/* navBarMenu */
 @media (max-width: 991px) { /* Se aplica en pantallas pequeñas */
     .navbar-collapse {
       background: rgba(0, 0, 0, 0.9); /* Fondo oscuro con transparencia */
@@ -21,6 +48,7 @@
     }
 }
 
+/* headerText */
 @media (max-width: 768px) {
   .header-text {
     bottom: auto !important;
@@ -40,3 +68,53 @@
     font-size: 0.7rem;
   }
 }
+
+
+/* navbar */
+@media (max-width: 768px) {
+  .logo-responsive {
+    width: 100px !important; /* Tamaño más pequeño para el logo */
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem; /* Más pequeño */
+  }
+
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* sectionOne */
+@media (max-width: 768px) {
+  h1.display-4 {
+    font-size: 2rem;        /* Tamaño más pequeño del título */
+  }
+
+  p.lead {
+    font-size: 1rem;        /* Reduce el texto del párrafo */
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1rem;   /* Botones más compactos */
+    font-size: 1rem;
+  }
+
+  .col-lg-4 img {
+    width: 100%;            /* Imagen responsive */
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .p-4, .p-lg-5 {
+    padding: 1rem !important; /* Reduce padding general */
+  }
+
+  .rounded-end {
+    border-radius: 0.5rem !important;
+  }
+}
+
+
