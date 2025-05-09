@@ -22,7 +22,7 @@
 }
 
 .industries-subheading {
-    color: #ff7200;
+    color: #1a4db3;
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
@@ -166,5 +166,40 @@
       height: 20px;
     }
   }
+
+/* svg animation */
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-gear {
+    transition: transform 0.6s ease;
+  }
+  
+  .rotate-gear:hover {
+    transform: rotate(360deg);
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  .bounce-svg {
+    transition: transform 0.3s ease;
+  }
+  .bounce-svg:hover {
+    animation: bounce 1s ease-in-out;
+  }
+    
   
   
