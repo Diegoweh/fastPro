@@ -1,5 +1,5 @@
 .supernav-bar {
-    background-color: #ff8000bb;
+    background-color: #eb7700;
   }
   
   .supernav-bar a {
@@ -10,15 +10,76 @@
     color: #1f5bd3;
     text-decoration: none;
   }
+
+  .supernav-bar .logo-big {
+    height: 40px;
+  }
+  
   
   /* Responsivo */
   @media (max-width: 768px) {
-    .supernav-bar span {
-      display: block;
-      text-align: center;
+    .supernav-bar {
+      padding: 0.5rem 1rem;
     }
   
+    .supernav-bar .logo-big {
+      height: 30px;      
+    }
+  
+    .supernav-bar span,
+    .supernav-bar .email-text {
+      font-size: 0.8rem;           
+    }    
+  
     .supernav-bar .btn {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.60rem;
+      white-space: nowrap;
+    }
+  
+    .supernav-bar .right-content-mobile {
+      flex-direction: row !important;
+      justify-content: space-between !important;
       width: 100%;
     }
+  
+    .supernav-bar .right-content-mobile > div,
+    .supernav-bar .email-text {
+      flex: 1;
+    }
+  
+    .supernav-bar svg {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .supernav-bar .right-content-mobile > div {
+      justify-content: start;
+    }
+  
+    .supernav-bar .email-text {
+      text-align: right;
+    }
+
+    .supernav-left {
+      padding: 0 0.5rem;
+    }
+  
+    .supernav-left img {
+      height: 30px;
+    }
+  
+    .supernav-left span {
+      font-size: 0.8rem;
+    }
+  
+    .supernav-left > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    
   }
+  
+  

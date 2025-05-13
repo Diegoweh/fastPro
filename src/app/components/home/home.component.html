@@ -2,7 +2,7 @@
 <!-- header -->
 <header class="position-relative h-50 card rounded-0 border-0">
   <div class="header-image">
-      <img style="max-height: 800px; width: 100%;" src="fpHeader.webp" alt="FastPro" title="FastPro" fetchpriority="high" loading="lazy" class="img-fluid hdr">
+      <img style="max-height: 800px; width: 100%;" src="fpHeader.webp" alt="FastPro" title="FastPro" fetchpriority="high" loading="lazy" class="img-fluid">
   </div>
 
   <!-- Contenedor para el título y el texto -->
@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-50 translate-middle-x w-100 px-2">
     <div class="container">
       <a class="navbar-brand" href="#" title="Fast Pro">
-        <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="150" loading="lazy" class="logo-responsive">
+        <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="190" loading="lazy" class="logo-responsive">
       </a>
   
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -57,8 +57,8 @@
               Resources
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="resourcesDropdown">
-              <li><a class="dropdown-item" routerLink="/features" routerLinkActive="active" title="FAST Features">FAST Features</a></li>
-              <li><a class="dropdown-item" routerLink="/perspectives" routerLinkActive="active" title="PRO Perspectives">PRO Perspectives</a></li>
+              <li><a class="dropdown-item" routerLink="/features" routerLinkActive="active" title="FAST Features" type="button">FAST Features</a></li>
+              <li><a class="dropdown-item" routerLink="/prospectives" routerLinkActive="active" title="PRO Prospectives">PRO Prospectives</a></li>
               <li><a class="dropdown-item" routerLink="/faqs" routerLinkActive="active" title="FAQs">FAQs</a></li>
             </ul>
           </li>
@@ -120,19 +120,19 @@
           Stay up-to-date with our latest announcements and notable content. Here, we share valuable insights and key updates to keep you informed and ahead of the curve
         </p>
         <div class="text-center text-md-start">
-          <button class="btn btn-outline-dark btn-lg mt-2" type="button">Learn More</button>
+          <a routerLink="/features" class="btn btn-outline-dark btn-lg mt-2" type="button">Learn More</a>
         </div>
       </div>
     </div>
     
     <div class="col-12 col-md-6">
       <div class="h-100 mt-0 mt-md-3 p-4 p-md-5 bg-body-tertiary border shadow rounded-3">
-        <h2 style="color: #eb7700;" class="text-center text-md-start">Pro Perspectives</h2>
+        <h2 style="color: #eb7700;" class="text-center text-md-start">Pro Prospectives</h2>
         <p class="text-center text-md-start">
           Explore valuable perspectives, practical insights, and in-depth knowledge on key topics to help you stay informed and make smarter, more effective decisions.
         </p>
         <div class="text-center text-md-start">
-          <button class="btn btn-outline-primary btn-lg mt-2" type="button">Learn More</button>
+          <a routerLink="/prospectives" class="btn btn-outline-primary btn-lg mt-2" type="button">Learn More</a>
         </div>
       </div>
     </div>

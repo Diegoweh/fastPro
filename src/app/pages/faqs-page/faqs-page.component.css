@@ -13,7 +13,6 @@
     background: linear-gradient(to top, rgba(255, 140, 0, 0.2), rgba(0, 0, 139, 0.3));
 }
 
-
 /* navBarMenu */
 @media (max-width: 991px) { /* Se aplica en pantallas pequeñas */
     .navbar-collapse {
@@ -61,69 +60,3 @@
     height: 20px;
   }
 }
-
-/* sectionOne */
-@media (max-width: 768px) {
-  h1.display-4 {
-    font-size: 2rem;        /* Tamaño más pequeño del título */
-  }
-
-  p.lead {
-    font-size: 1rem;        /* Reduce el texto del párrafo */
-  }
-
-  .btn-lg {
-    padding: 0.5rem 1rem;   /* Botones más compactos */
-    font-size: 1rem;
-  }
-
-  .col-lg-4 img {
-    width: 100%;            /* Imagen responsive */
-    height: auto;
-    border-radius: 0.5rem;
-  }
-
-  .p-4, .p-lg-5 {
-    padding: 1rem !important; /* Reduce padding general */
-  }
-
-  .rounded-end {
-    border-radius: 0.5rem !important;
-  }
-}
-
-/* svg animation */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.rotate-gear {
-  transition: transform 0.6s ease;
-}
-
-.rotate-gear:hover {
-  transform: rotate(360deg);
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.bounce-svg {
-  transition: transform 0.3s ease;
-}
-.bounce-svg:hover {
-  animation: bounce 1s ease-in-out;
-}
-
-

@@ -1,0 +1,139 @@
+<header class="position-relative h-50 card rounded-0 border-0">
+    <div class="header-image">
+        <img style="max-height: 800px; width: 100%;" src="fpHeader.webp" alt="FastPro" title="FastPro"  loading="lazy" class="img-fluid hdr">
+    </div>
+  
+    <!-- Contenedor para el título y el texto -->
+    <div class="position-absolute bottom-0 start-0 p-5 text-white header-text">
+        <h2 class="fw-bold">FAST</h2>
+        <h2 class="fw-bold">STRONG RELIABLE</h2>
+        <p class="mb-0">Contact us now for expert guidance and services designed to propel your success</p>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-50 translate-middle-x w-100 px-2">
+      <div class="container">
+        <a class="navbar-brand" href="#" title="Fast Pro">
+          <img src="fpLogo.svg" alt="Fastpro" title="Fast Pro" width="190" loading="lazy" class="logo-responsive">
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto nav-underline gap-2 f5">
+            <li class="nav-item">
+              <a class="nav-link active text-white" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" title="home">Home</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-white" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" title="about">About</a>
+            </li>
+    
+            <!-- Dropdown: Products -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" routerLink="/products" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" routerLink="/bags" title="bags">Bags</a></li>
+                <li><a class="dropdown-item" routerLink="/textiles" title="textiles">Textiles</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-white" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page" title="services">Services</a>
+            </li>
+    
+            <!-- Dropdown: Resources -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item" routerLink="/features" routerLinkActive="active" title="FAST Features">FAST Features</a></li>
+                <li><a class="dropdown-item" routerLink="/prospectives" routerLinkActive="active" title="PRO Prospectives">PRO Prospectives</a></li>
+                <li><a class="dropdown-item" routerLink="/faqs" routerLinkActive="active" title="FAQs">FAQs</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" title="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<!-- Hero section -->
+<section class="py-5 text-center bg-secondary text-white mt-4 rounded shadow">
+    <div class="container">
+      <h1  class="fw-bold">FAST Features</h1>
+      <p class="lead">Important updates, official communications, and featured media</p>
+    </div>
+</section>
+
+<!-- card deck -->
+<section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Important Announcements</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+  
+        <div class="col">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 style="color: #eb7700;" class="card-title">Fast Pro Announcement Letter</h5>
+              <p class="card-text">Official letter detailing key updates for Q2.</p>
+              <a href="ruta/documento1.pdf" target="_blank" class="btn btn-outline-primary">View PDF</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 style="color: #eb7700;" class="card-title">April Tariff Statement</h5>
+              <p class="card-text">Latest statement regarding product tariffs.</p>
+              <a href="ruta/documento2.pdf" target="_blank" class="btn btn-outline-primary">View PDF</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Video section -->
+  <section class="py-5 bg-light mb-4 rounded">
+    <div class="container">
+      <h2 class="mb-4">Featured Videos</h2>
+  
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/2mTA7BJrWVQ" title="FIBCA Video 1" allowfullscreen></iframe>
+          </div>
+          <p class="mt-2">FIBCA Unlocking Enviromental</p>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/-fwwqG2mf0U" title="FIBCA Video 2" allowfullscreen></iframe>
+          </div>
+          <p class="mt-2">FIBCA Designs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Cta section -->
+  <section class="py-5 text-center bg-primary text-white mb-4 rounded shadow">
+    <div class="container">
+      <h3 class="mb-3">Stay Updated with FAST PRO</h3>
+      <a routerLink="/contact" class="btn btn-light">Contact Us</a>
+    </div>
+  </section>
+  
+  
