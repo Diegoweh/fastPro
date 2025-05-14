@@ -47,7 +47,7 @@
 /* navbar */
 @media (max-width: 768px) {
   .logo-responsive {
-    width: 100px !important; /* Tamaño más pequeño para el logo */
+    width: 130px !important; /* Tamaño más pequeño para el logo */
   }
 
   .navbar-toggler {

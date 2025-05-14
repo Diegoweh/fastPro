@@ -17,8 +17,8 @@
     .navbar-collapse {
       background: rgba(0, 0, 0, 0.9); /* Fondo oscuro con transparencia */
       padding: 1rem; /* Agrega algo de padding para mejor apariencia */
-      border-radius: 10px; /* Bordes redondeados opcionales */
-    }
+      border-radius: 10px; /* Bordes redondeados opcionales */      
+    }    
 }
 
 @media (max-width: 768px) {
@@ -43,7 +43,7 @@
 
 @media (max-width: 768px) {
   .logo-responsive {
-    width: 100px !important; /* Tamaño más pequeño para el logo */
+    width: 130px !important; /* Tamaño más pequeño para el logo */
   }
 
   .navbar-toggler {
@@ -89,4 +89,27 @@
 }
 .bounce-svg:hover {
   animation: bounce 1s ease-in-out;
+}
+
+/* img animation */
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.img-animation {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 0% cover 50%;
+  animation-timing-function: ease-out;
 }
